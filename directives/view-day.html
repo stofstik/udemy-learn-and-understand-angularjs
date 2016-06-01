@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+    <h3 class="panel-title">
+        {{ convertToDate({ dt: weatherDay.dt }) | date : dateFormat }}
+    </h3>
+    <h3 class"panel-body">
+        Daytime temperature {{ roundTemp({ dayTimeTemp: weatherDay.temp.day }) }}°C
+    </h3>
+</div>
+
